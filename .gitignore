@@ -1,8 +1,19 @@
-__pycache__
-env
+# Python bytecode files
+__pycache__/
 *.pyc
+
+# Virtual environment directory
+env/
+
+# Notes and documentation files
 note.mkd
-static\img\Photos equipe
-static\img\tableau example.jpg
-app\migrations
+
+# Static files (adjust paths if needed)
+static/img/Photos\ equipe/
+static/img/tableau\ example.jpg
+
+# Django migrations directory
+app/migrations/
+
+# Bitbucket Pipelines configuration
 bitbucket-pipelines.yml
