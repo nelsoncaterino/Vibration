@@ -5,3 +5,4 @@ note.mkd
 static\img\Photos equipe
 static\img\tableau example.jpg
 app\migrations
+bitbucket-pipelines.yml
