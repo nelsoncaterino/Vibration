@@ -1,0 +1,7 @@
+__pycache__
+env
+*.pyc
+note.mkd
+static\img\Photos equipe
+static\img\tableau example.jpg
+app\migrations

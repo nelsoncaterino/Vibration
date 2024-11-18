@@ -1,0 +1,15 @@
+body {
+    margin: 0;
+    border-radius: 50px;
+}
+
+h1 {
+    color: #000000;
+    text-align: center;
+    margin-bottom: 20px;
+    filter: drop-shadow(5px 5px 3px #7a7a7a);
+}
+
+strong {
+    font-size: 1.3em;
+}

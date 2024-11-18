@@ -1,0 +1,33 @@
+{% load static %}
+{% include "pages/base.html" %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'css/hamburger.css' %}">
+</head>
+<body>
+
+      <!-- Toggle pour le menu -->
+      <div id="nav-icon1" class="menu-icon">
+          <span></span>
+          <span></span>
+          <span></span>
+      </div>
+  
+      <!-- Contenu du menu plein écran -->
+      <div class="fullscreen-menu" id="fullscreenMenu">
+          <ul class="menu-items list-unstyled text-center">
+              <li><a href="{% url 'emissions' %}">Grille Antenne</a></li>
+              <li><a href="{% url 'teams' %}">Teams</a></li>
+              <li><a href="{% url 'podcast' %}">Podcast</a></li>
+              <li><a href="{% url 'contact' %}">Contact</a></li>
+          </ul>
+      </div>
+    </div>
+
+      <script src="{% static 'js/hamburger.js' %}"></script>
+  </body>
+  </html>
+  

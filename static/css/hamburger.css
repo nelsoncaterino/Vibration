@@ -1,0 +1,105 @@
+/* Style de l'icône hamburger */
+#nav-icon1 {  
+    position: absolute; 
+    top: 20px;         
+    left: 20px;        
+    z-index: 1100;     
+    width: 50px;       /* Taille ajustée pour la réactivité */
+    height: 40px;
+    margin: auto;
+    cursor: pointer;
+    transition: 0.5s ease-in-out;
+}
+
+/* Ajustement pour aligner les barres du hamburger */
+#nav-icon1 span {
+    display: flex;
+    position: absolute;
+    justify-content: flex-start;
+    height: 4px;
+    width: 75%;
+    background: #EA14B5;
+    border-radius: 2px;
+    transition: 0.25s ease-in-out;
+}
+
+#nav-icon1 span:nth-child(1) { top: 0px; }
+#nav-icon1 span:nth-child(2) { top: 18px; }
+#nav-icon1 span:nth-child(3) { top: 36px; }
+
+/* Animation du menu hamburger en croix */
+#nav-icon1.open span:nth-child(1) {
+    top: 18px;
+    transform: rotate(135deg);
+}
+
+#nav-icon1.open span:nth-child(2) {
+    opacity: 0;
+    left: -60px;
+}
+
+#nav-icon1.open span:nth-child(3) {
+    top: 18px;
+    transform: rotate(-135deg);
+}
+
+/* Styles du menu plein écran */
+.fullscreen-menu {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(59, 59, 59, 0.815);
+    color: #fff;
+    font-size: 2rem;
+    z-index: 1050;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    opacity: 0;
+    transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+.fullscreen-menu.show {
+    display: flex;
+    opacity: 1;
+    transform: scale(1);
+}
+
+/* Style de survol pour les liens dans le menu */
+.fullscreen-menu a:hover {
+    color: #EA14B5;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    #nav-icon1 {
+        width: 40px;
+        height: 30px;
+    }
+
+    #nav-icon1 span {
+        height: 3px;
+    }
+
+    .fullscreen-menu {
+        font-size: 1.5rem;
+    }
+}
+
+@media (max-width: 480px) {
+    #nav-icon1 {
+        width: 30px;
+        height: 25px;
+    }
+
+    #nav-icon1 span {
+        height: 2px;
+    }
+
+    .fullscreen-menu {
+        font-size: 1.2rem;
+    }
+}

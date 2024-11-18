@@ -1,0 +1,21 @@
+{% load static %}
+{% include "pages/base.html" %}
+{% include "modules/navbar.html" %}
+
+<div class="row">
+    {% for card in cards %}
+    <div class="col-md-4">
+        <div class="card">
+            {% if card.image %}
+            <img src="{{ card.image.url }}" class="card-img-top" alt="{{ card.title }}">
+            {% endif %}
+            <div class="card-body">
+                <h5 class="card-title">{{ card.title }}</h5>
+                <p class="card-text">{{ card.content }}</p>
+            </div>
+        </div>
+    </div>
+    {% endfor %}
+</div>
+
+

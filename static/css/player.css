@@ -1,0 +1,17 @@
+.qt-header-play-btn {
+    padding: 3px 20px;
+    background-color: #EA14B5;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    float: right;
+    text-align: center;
+    font-family: 'Barlow Semi Condensed', sans-serif; /* Ajout de la police sans-serif */
+}
+
+audio #radio-player {    
+    padding: 1px 2px;
+    background-color: #f0f0f0; /* Exemple de couleur de fond */
+    box-shadow: 0 0 0.75rem crimson; /* Utilisation de box-shadow pour l'ombre */
+    border-radius: 5px; /* Ajout de coins arrondis */
+}

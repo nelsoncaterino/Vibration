@@ -1,0 +1,36 @@
+.card-container {
+    display: flex;
+    justify-content: center; /* Centre les cartes */
+    gap: 20px; /* Espace entre les cartes */
+    padding: 20px; /* Ajout de padding autour du conteneur */
+}
+
+.card {
+    display: flex;
+    align-items: center;
+    width: 250px; /* Largeur des cartes */
+    padding: 20px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    border-radius: 15px;
+    background-color: rgb(235, 234, 234);
+    transition: box-shadow 0.3s;
+    text-align: center;
+}
+
+.card:hover {
+    box-shadow: black 0px 8px 20px;
+}
+
+.social-icons {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.social-icons i {
+    margin: 0 10px;
+    font-size: 1.5em;
+}
+
+.social-icons i:hover {
+    color: #EA14B5;
+}

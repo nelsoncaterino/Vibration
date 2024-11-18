@@ -1,0 +1,27 @@
+body {
+    background-color: darkgray;
+  }
+  h1{
+    text-align: center;
+    margin-top: 40px;
+
+  }
+  .livestream-container {
+    margin: 200px auto;
+    text-align: center;    
+    padding: 1000px;
+    filter: drop-shadow(5px 1px 4px #000000);
+  }
+  iframe {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 600px;
+    border: none;
+    object-fit: cover;  
+    margin-bottom: 300px;
+  }
+ .container{
+  margin-top: 30px;
+ }
